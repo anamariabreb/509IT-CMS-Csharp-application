@@ -1,0 +1,8 @@
+C:\Users\Administrator\Desktop\contact-management-system\obj\Debug\netcoreapp3.0\contact-management-system.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\contact-management-system\obj\Debug\netcoreapp3.0\contact_management_system.BusinessForm.resources
+C:\Users\Administrator\Desktop\contact-management-system\obj\Debug\netcoreapp3.0\contact_management_system.Homepage.resources
+C:\Users\Administrator\Desktop\contact-management-system\obj\Debug\netcoreapp3.0\contact_management_system.PersonalForm.resources
+C:\Users\Administrator\Desktop\contact-management-system\obj\Debug\netcoreapp3.0\contact-management-system.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\contact-management-system\obj\Debug\netcoreapp3.0\contact-management-system.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\contact-management-system\obj\Debug\netcoreapp3.0\contact-management-system.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\contact-management-system\obj\Debug\netcoreapp3.0\contact-management-system.csproj.CoreCompileInputs.cache
