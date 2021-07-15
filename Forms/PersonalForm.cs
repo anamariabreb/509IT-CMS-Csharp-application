@@ -107,9 +107,26 @@ namespace contact_management_system
 
         }
 
-        private void tbFName_TextChanged(object sender, EventArgs e)
-        {
 
+
+        // Number and + character validation
+        private void tbTel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //We only want to allow numeric style chars
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '+'))
+            {
+                //Setting e.Handled cancels the keypress event, so the key is not entered
+                e.Handled = true;
+            }
+        }
+
+        private void tbPostcode_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Count the digits already in the text.  I'm using linq:
+            if ((sender as TextBox).Text.Count(Char.IsLetterOrDigit) >= 8)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

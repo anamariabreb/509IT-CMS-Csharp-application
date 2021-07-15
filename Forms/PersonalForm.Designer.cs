@@ -163,7 +163,6 @@
             this.tbFName.Name = "tbFName";
             this.tbFName.Size = new System.Drawing.Size(116, 23);
             this.tbFName.TabIndex = 9;
-            this.tbFName.TextChanged += new System.EventHandler(this.tbFName_TextChanged);
             // 
             // tbLName
             // 
@@ -180,6 +179,7 @@
             this.tbTel.Name = "tbTel";
             this.tbTel.Size = new System.Drawing.Size(116, 23);
             this.tbTel.TabIndex = 11;
+            this.tbTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTel_KeyPress);
             // 
             // btnExit
             // 
@@ -261,6 +261,7 @@
             this.tbPostcode.Name = "tbPostcode";
             this.tbPostcode.Size = new System.Drawing.Size(116, 23);
             this.tbPostcode.TabIndex = 43;
+            this.tbPostcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPostcode_KeyPress);
             // 
             // label6
             // 
