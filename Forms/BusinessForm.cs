@@ -126,7 +126,7 @@ namespace contact_management_system
         // Simple string fields validation to ensure only letters are inserted - used for FName, LName and City
         private void tbFName_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetter(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
             }
@@ -158,7 +158,7 @@ namespace contact_management_system
         // String fields validation to ensure only letters, digits and special char ., are inserted - used for Addr1 and Addr2
         private void tbAddr1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetterOrDigit(e.KeyChar) && (e.KeyChar != '.') && (e.KeyChar != ','))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && (e.KeyChar != '.') && (e.KeyChar != ','))
             {
                 e.Handled = true;
             }
