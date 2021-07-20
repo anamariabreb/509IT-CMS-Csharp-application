@@ -54,6 +54,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(65, 260);
+            this.dataGridView1.Location = new System.Drawing.Point(-26, 259);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -114,7 +115,6 @@
             this.label1.Size = new System.Drawing.Size(18, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "ID";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -163,6 +163,7 @@
             this.tbFName.Name = "tbFName";
             this.tbFName.Size = new System.Drawing.Size(116, 23);
             this.tbFName.TabIndex = 9;
+            this.tbFName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbFName_KeyPress);
             // 
             // tbLName
             // 
@@ -171,6 +172,7 @@
             this.tbLName.Name = "tbLName";
             this.tbLName.Size = new System.Drawing.Size(116, 23);
             this.tbLName.TabIndex = 10;
+            this.tbLName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbFName_KeyPress);
             // 
             // tbTel
             // 
@@ -212,7 +214,6 @@
             this.label5.Size = new System.Drawing.Size(58, 15);
             this.label5.TabIndex = 37;
             this.label5.Text = "Home Tel";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // tbHomeTel
             // 
@@ -221,6 +222,7 @@
             this.tbHomeTel.Name = "tbHomeTel";
             this.tbHomeTel.Size = new System.Drawing.Size(116, 23);
             this.tbHomeTel.TabIndex = 38;
+            this.tbHomeTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTel_KeyPress);
             // 
             // tbEmail
             // 
@@ -237,6 +239,7 @@
             this.tbAddr1.Name = "tbAddr1";
             this.tbAddr1.Size = new System.Drawing.Size(116, 23);
             this.tbAddr1.TabIndex = 40;
+            this.tbAddr1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbAddr1_KeyPress);
             // 
             // tbAddr2
             // 
@@ -245,6 +248,7 @@
             this.tbAddr2.Name = "tbAddr2";
             this.tbAddr2.Size = new System.Drawing.Size(116, 23);
             this.tbAddr2.TabIndex = 41;
+            this.tbAddr2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbAddr1_KeyPress);
             // 
             // tbCity
             // 
@@ -253,6 +257,7 @@
             this.tbCity.Name = "tbCity";
             this.tbCity.Size = new System.Drawing.Size(116, 23);
             this.tbCity.TabIndex = 42;
+            this.tbCity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbFName_KeyPress);
             // 
             // tbPostcode
             // 
@@ -282,7 +287,6 @@
             this.label7.Size = new System.Drawing.Size(83, 15);
             this.label7.TabIndex = 45;
             this.label7.Text = "Address Line 1";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -314,11 +318,23 @@
             this.label10.TabIndex = 48;
             this.label10.Text = "Postcode";
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(483, 162);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(235, 27);
+            this.btnSearch.TabIndex = 49;
+            this.btnSearch.Text = "Search by Email Address";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // PersonalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 519);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -382,5 +398,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
