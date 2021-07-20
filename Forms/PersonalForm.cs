@@ -124,10 +124,9 @@ namespace contact_management_system
         // Validation
         // 
 
-        // String fields validation to ensure only letters are inserted - used for FName, LName and City
+        // Simple string fields validation to ensure only letters are inserted - used for FName, LName and City
         private void tbFName_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //Count the digits already in the text.  I'm using linq:
             if (!char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
@@ -137,7 +136,7 @@ namespace contact_management_system
         // Number and + character validation for telephone fields
         private void tbTel_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //We only want to allow numeric style chars
+            //We only want to allow numeric style chars and + sign
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '+'))
             {
                 //Setting e.Handled cancels the keypress event, so the key is not entered
@@ -157,7 +156,7 @@ namespace contact_management_system
             }
         }
 
-        // String and letter fields validation to ensure only letters, digits and special char ., are inserted - used for Addr1 and Addr2
+        // String fields validation to ensure only letters, digits and special char ., are inserted - used for Addr1 and Addr2
         private void tbAddr1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetterOrDigit(e.KeyChar) && (e.KeyChar != '.') && (e.KeyChar != ','))
